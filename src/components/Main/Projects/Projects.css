@@ -1,0 +1,205 @@
+.projects {
+    margin-bottom: 6rem;
+    padding-top: 2rem;
+}
+
+.projects__title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.projects__title h2 {
+    margin-top: 1rem;
+}
+
+.projects__list {
+    margin-top: 2rem;
+}
+
+.projects__item {
+    float: left;
+    margin-bottom: 0.5rem;
+}
+
+.projects__item a {
+    color: #737373;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.projects__item.active a {
+    color: #9038ff;
+}
+
+.project__item {
+    margin-top: 5.325rem;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 180px;
+    position: relative;
+}
+
+.project__image {
+    position: absolute;
+    top: -30px;
+    right: 0rem;
+    max-width: 200px;
+}
+
+.project__image img {
+    width: 100%;
+}
+
+.project__item.sele {
+    background: linear-gradient(rgba(40, 43, 52, 0.4), rgba(40, 43, 52, 0.4)),
+        url('../../../assets/img/sofie-brand.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.project__item.move {
+    background: linear-gradient(
+            rgba(140, 140, 140, 0.4),
+            rgba(140, 140, 140, 0.4)
+        ),
+        url('../../../assets/img/sofie-brand.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.project__item.kalewo {
+    background: linear-gradient(rgba(40, 43, 52, 0.4), rgba(40, 43, 52, 0.4)),
+        url('../../../assets/img/sofie-brand.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.project__item--box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project__title {
+    font-size: 1.825rem;
+}
+
+.project__subtitle {
+    display: none;
+    font-size: 1.825rem;
+}
+
+.project__link {
+    margin-top: 4rem;
+    font-size: 1rem;
+    color: white;
+    -webkit-text-stroke: 1px transparent;
+    transition: all 200ms linear;
+}
+
+.project__link:hover {
+    color: transparent;
+    text-decoration: none;
+    -webkit-text-stroke-color: white;
+}
+
+.project__link svg {
+    width: 1.325rem;
+    height: 1.325rem;
+    vertical-align: sub;
+}
+
+.project__hero {
+    display: block;
+}
+
+@media screen and (min-width: 568px) {
+    .project__item {
+        min-height: 220px;
+        margin-top: 7rem;
+    }
+
+    .project__title {
+        font-size: 2.5rem;
+    }
+
+    .project__image {
+        max-width: 250px;
+        top: -42px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .projects__title {
+        flex-direction: row;
+        margin-bottom: 4rem;
+    }
+
+    .projects__list {
+        margin-top: 1rem;
+    }
+
+    .projects__item {
+        margin-bottom: 0;
+    }
+
+    .projects__item a {
+        font-size: 1.825rem;
+    }
+
+    .project__item {
+        min-height: 250px;
+        padding-left: 4.5rem;
+    }
+
+    .project__image {
+        max-width: 280px;
+        top: -56px;
+    }
+
+    .project__link {
+        font-size: 1.825rem;
+    }
+
+    .project__link svg {
+        width: 1.925rem;
+        height: 1.925rem;
+    }
+
+    .project__subtitle {
+        display: inline-block;
+    }
+
+    .project__hero {
+        display: block;
+        text-align: left;
+        margin: unset;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .project__item {
+        min-height: 520px;
+        margin-top: 10rem;
+        max-width: 85%;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .project__image {
+        max-width: 600px;
+        top: -110px;
+    }
+
+    .project__title {
+        font-size: 3.825rem;
+    }
+
+    .project__link {
+        margin-top: 8rem;
+    }
+}

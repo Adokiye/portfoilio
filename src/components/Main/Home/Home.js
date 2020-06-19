@@ -24,7 +24,11 @@ const Home = () => {
                         requirements. I’m available for remote gigs. Let’s make
                         something special
                     </h3>
-                    <a href="#contact" className="landing__link">
+                    <a
+                        href="#contact"
+                        className="landing__link"
+                        onClick={(e) => console.log(this)}
+                    >
                         HIRE ME
                     </a>
                 </div>
