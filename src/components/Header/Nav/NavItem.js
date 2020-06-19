@@ -2,8 +2,8 @@ import React from 'react';
 
 const NavItem = ({ href, name }) => {
     return (
-        <li class="nav__item">
-            <a href={href} class="nav__link">
+        <li className="nav__item">
+            <a href={href} className="nav__link">
                 {name}
             </a>
         </li>
