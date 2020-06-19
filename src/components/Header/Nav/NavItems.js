@@ -5,10 +5,10 @@ import { ReactComponent as CloseIcon } from '../../../assets/svg/close-icon.svg'
 const NavItems = ({ className = '', onMobileScreen = false, toggle }) => {
     return (
         <ul className={`nav__list ${className}`}>
-            <NavItem to="#" name="Home" />
-            <NavItem to="#" name="Get In Touch" />
-            <NavItem to="#" name="Values" />
-            <NavItem to="#" name="Projects" />
+            <NavItem href="#" name="Home" />
+            <NavItem href="#contact" name="Get In Touch" />
+            <NavItem href="#values" name="Values" />
+            <NavItem href="#projects" name="Projects" />
             {onMobileScreen && (
                 <li class="nav__item">
                     <span class="nav__link" onClick={toggle}>
