@@ -11,7 +11,7 @@ const Values = () => {
         <section id="values" className="values">
             <div className="values__title">
                 <h2 className="bebas text-center">
-                    <ArrowLeftWithUnderscoreIcon />
+                    <ArrowLeftWithUnderscoreIcon /> 
                     Values
                 </h2>
                 <h4 className="landing__hero values__hero">

@@ -4,7 +4,7 @@
     z-index: 100;
 }
 
-.nav {
+.nav.container {
     padding: 0;
     margin-right: 0;
 }
@@ -82,7 +82,7 @@
         background: #121212;
     }
 
-    .nav {
+    .nav.container {
         padding-top: 2rem;
         padding-bottom: 2rem;
         padding-left: 15px;
