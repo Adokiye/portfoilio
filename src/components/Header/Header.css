@@ -1,3 +1,8 @@
+a:not([href]).nav__link {
+    color: initial;
+    text-decoration: initial;
+}
+
 .header {
     position: sticky;
     top: 0px;
@@ -26,7 +31,7 @@
 }
 
 .nav__link.active {
-    color: #9038ff;
+    color: #9038ff !important;
     -webkit-text-stroke-color: transparent;
 }
 

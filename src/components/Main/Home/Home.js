@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import LandingImage from '../../../assets/img/adokiye.png';
 import { ReactComponent as ArrowDownIcon } from '../../../assets/svg/arrow-down.svg';
 
 const Home = () => {
     return (
-        <section>
+        <section id="home">
             <div className="row align-items-center landing">
                 <div className="d-md-none col-12">
                     <div className="landing__image">
@@ -24,13 +25,9 @@ const Home = () => {
                         requirements. I’m available for remote gigs. Let’s make
                         something special
                     </h3>
-                    <a
-                        href="#contact"
-                        className="landing__link"
-                        onClick={(e) => console.log(this)}
-                    >
+                    <Link className="landing__link" to="contact" spy={true}>
                         HIRE ME
-                    </a>
+                    </Link>
                 </div>
                 <div className="d-none d-md-block col-md-5">
                     <div className="landing__image">
@@ -38,10 +35,10 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="landing__scroll">
-                    <a href="#values">
+                    <Link to="values" spy={true}>
                         <ArrowDownIcon />
                         <ArrowDownIcon />
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>

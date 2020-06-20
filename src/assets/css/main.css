@@ -145,14 +145,14 @@ h2 svg {
 }
 
 .landing__link {
-    color: #9038ff;
+    color: #9038ff !important;
     font-size: 1.5rem;
     transition: all 300ms linear;
     -webkit-text-stroke: 1px transparent;
 }
 
 .landing__link:hover {
-    color: transparent;
+    color: transparent !important;
     text-decoration: none;
     -webkit-text-stroke-color: #9038ff;
 }

@@ -1,16 +1,19 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
-const NavItem = ({ href, name, active, onClick }) => {
-    const activeClass = active ? 'active' : '';
+const NavItem = ({ name, to, onClick, offset }) => {
     return (
         <li className="nav__item">
-            <a
-                href={href}
-                className={`nav__link ${activeClass}`}
+            <Link
+                className="nav__link"
+                activeClass="active"
+                to={to}
+                spy={true}
+                offset={offset}
                 onClick={onClick}
             >
                 {name}
-            </a>
+            </Link>
         </li>
     );
 };

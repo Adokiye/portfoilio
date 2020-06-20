@@ -2,21 +2,25 @@ export default [
     {
         id: 1,
         name: 'Home',
-        path: '#',
+        path: 'home',
+        offset: -110,
     },
     {
         id: 2,
         name: 'Get In Touch',
-        path: '#contact',
+        path: 'contact',
+        offset: -110,
     },
     {
         id: 3,
         name: 'Values',
-        path: '#values',
+        path: 'values',
+        offset: -50,
     },
     {
         id: 4,
         name: 'Projects',
-        path: '#projects',
+        path: 'projects',
+        offset: -50,
     },
 ];

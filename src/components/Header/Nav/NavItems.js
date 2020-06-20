@@ -1,27 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import NavItem from './NavItem';
 import NavItemData from './NavItemData';
 import { ReactComponent as CloseIcon } from '../../../assets/svg/close-icon.svg';
 
 const NavItems = ({ className = '', onMobileScreen = false, toggle }) => {
-    const [activeLink, setActiveLink] = useState(1);
-    const handleLinkClick = id => {
-        setActiveLink(id);
-        if (toggle) {
-            toggle();
-        }
-    };
     return (
         <ul className={`nav__list ${className}`}>
-            {NavItemData.map(({ id, name, path }) => (
+            {NavItemData.map(({ id, name, path, offset }) => (
                 <NavItem
                     key={id}
-                    href={path}
+                    to={path}
                     name={name}
-                    active={id === activeLink}
-                    onClick={() => handleLinkClick(id)}
+                    offset={offset}
+                    onClick={toggle}
                 />
             ))}
+
             {onMobileScreen && (
                 <li className="nav__item">
                     <span className="nav__link" onClick={toggle}>
