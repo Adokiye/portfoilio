@@ -1,17 +1,15 @@
 import React from 'react';
 import ValuesIcon from '../../../assets/svg/values.svg';
 import { ReactComponent as ArrowLeftWithUnderscoreIcon } from '../../../assets/svg/arrow-left-and-underscore.svg';
-import { ReactComponent as TeamWorkIcon } from '../../../assets/svg/teamwork.svg';
-import { ReactComponent as SpeedIcon } from '../../../assets/svg/cube.svg';
-import { ReactComponent as CommunicationIcon } from '../../../assets/svg/cylinder.svg';
-import { ReactComponent as AdaptabilityIcon } from '../../../assets/svg/spanner.svg';
+import Value from './Value/Value';
+import ValuesData from '../../../data/ValuesData';
 
 const Values = () => {
     return (
         <section id="values" className="values">
             <div className="values__title">
                 <h2 className="bebas text-center">
-                    <ArrowLeftWithUnderscoreIcon /> 
+                    <ArrowLeftWithUnderscoreIcon />
                     Values
                 </h2>
                 <h4 className="landing__hero values__hero">
@@ -21,22 +19,14 @@ const Values = () => {
             <div className="row values__item--box">
                 <div className="col-md-6">
                     <div className="row">
-                        <div className="col-6 values__item">
-                            <TeamWorkIcon />
-                            <p className="mt-3">Team Work</p>
-                        </div>
-                        <div className="col-6 values__item">
-                            <SpeedIcon />
-                            <p className="mt-3">Speed</p>
-                        </div>
-                        <div className="col-6 values__item values__item--small">
-                            <CommunicationIcon />
-                            <p className="mt-3">Communication</p>
-                        </div>
-                        <div className="col-6 values__item values__item--small">
-                            <AdaptabilityIcon />
-                            <p className="mt-3">Adaptability</p>
-                        </div>
+                        {ValuesData.map(({ id, className, icon, name }) => (
+                            <Value
+                                key={id}
+                                icon={icon}
+                                name={name}
+                                className={className}
+                            />
+                        ))}
                     </div>
                 </div>
 
