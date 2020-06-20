@@ -2,7 +2,7 @@ import React from 'react';
 import ValuesIcon from '../../../assets/svg/values.svg';
 import { ReactComponent as ArrowLeftWithUnderscoreIcon } from '../../../assets/svg/arrow-left-and-underscore.svg';
 import Value from './Value/Value';
-import ValuesData from '../../../data/ValuesData';
+import ValuesData from './Value/ValueData';
 
 const Values = () => {
     return (

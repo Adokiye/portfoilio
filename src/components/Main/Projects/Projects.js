@@ -14,19 +14,19 @@ const Projects = () => {
                 </h2>
                 <ul className="projects__list">
                     <li className="projects__item active">
-                        <a href="#">ALL</a>
+                        <a href="#0">ALL</a>
                     </li>
                     <li className="projects__item">
-                        <a href="#">LARAVEL</a>
+                        <a href="#0">LARAVEL</a>
                     </li>
                     <li className="projects__item">
-                        <a href="#">NODE JS</a>
+                        <a href="#0">NODE JS</a>
                     </li>
                     <li className="projects__item">
-                        <a href="#">REACT NATIVE</a>
+                        <a href="#0">REACT NATIVE</a>
                     </li>
                     <li className="projects__item">
-                        <a href="#">FLUTTER</a>
+                        <a href="#0">FLUTTER</a>
                     </li>
                 </ul>
             </div>

@@ -25,7 +25,12 @@ const Home = () => {
                         requirements. I’m available for remote gigs. Let’s make
                         something special
                     </h3>
-                    <Link className="landing__link" to="contact" spy={true}>
+                    <Link
+                        className="landing__link"
+                        to="contact"
+                        spy={true}
+                        offset={-110}
+                    >
                         HIRE ME
                     </Link>
                 </div>
@@ -35,7 +40,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="landing__scroll">
-                    <Link to="values" spy={true}>
+                    <Link to="values" spy={true} offset={-50}>
                         <ArrowDownIcon />
                         <ArrowDownIcon />
                     </Link>
