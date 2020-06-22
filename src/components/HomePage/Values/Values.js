@@ -1,6 +1,6 @@
 import React from 'react';
+import SectionHeader from '../../../utils/SectionHeader/SectionHeader';
 import ValuesIcon from '../../../assets/svg/values.svg';
-import { ReactComponent as ArrowLeftWithUnderscoreIcon } from '../../../assets/svg/arrow-left-and-underscore.svg';
 import Value from './Value/Value';
 import ValuesData from './Value/ValueData';
 
@@ -8,10 +8,7 @@ const Values = () => {
     return (
         <section id="values" className="values">
             <div className="values__title">
-                <h2 className="bebas text-center">
-                    <ArrowLeftWithUnderscoreIcon />
-                    Values
-                </h2>
+                <SectionHeader name="Values" isCentered />
                 <h4 className="landing__hero values__hero">
                     These are the values i bring to the table and more...
                 </h4>

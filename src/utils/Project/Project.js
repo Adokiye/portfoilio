@@ -1,16 +1,17 @@
 import React from 'react';
-import { ReactComponent as ArrowLeftIcon } from '../../../../assets/svg/arrow-left.svg';
+import { NavLink } from 'react-router-dom';
+import { ReactComponent as ArrowLeftIcon } from '../../assets/svg/arrow-right.svg';
 
-const Project = ({ className = '', title, subtitle, href, src, alt }) => {
+const Project = ({ className = '', title, subtitle, path, src, alt }) => {
     return (
         <div className={`project__item row ${className}`}>
             <div className="col-5 col-md-6 project__item--box">
                 <h2 className="project__title">{title}</h2>
                 <h4 className="project__subtitle">{subtitle}</h4>
-                <a className="project__link" href={href}>
-                    View Work
+                <NavLink to={path} className="project__link">
+                    View Works
                     <ArrowLeftIcon />
-                </a>
+                </NavLink>
             </div>
             <div className="project__image">
                 <img src={src} alt={alt} />

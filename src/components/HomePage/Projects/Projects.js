@@ -1,6 +1,6 @@
 import React from 'react';
-import { ReactComponent as ArrowLeftWithUnderscoreIcon } from '../../../assets/svg/arrow-left-and-underscore.svg';
-import Project from './Project/Project';
+import SectionHeader from '../../../utils/SectionHeader/SectionHeader';
+import Project from '../../../utils/Project/Project';
 import ProjectsData from '../../../data/ProjectsData';
 import './Projects.css';
 
@@ -8,10 +8,7 @@ const Projects = () => {
     return (
         <section className="projects" id="projects">
             <div className="projects__title text-center text-md-left">
-                <h2 className="bebas">
-                    <ArrowLeftWithUnderscoreIcon />
-                    Projects
-                </h2>
+                <SectionHeader name="Projects" />
                 <ul className="projects__list">
                     <li className="projects__item active">
                         <a href="#0">ALL</a>
@@ -33,12 +30,13 @@ const Projects = () => {
 
             <div className="project__list">
                 {ProjectsData.map(
-                    ({ id, className, title, subtitle, image }) => (
+                    ({ id, className, title, subtitle, path, image }) => (
                         <Project
                             key={id}
                             className={className}
                             title={title}
                             subtitle={subtitle}
+                            path={path}
                             src={image.src}
                             alt={image.alt}
                         />

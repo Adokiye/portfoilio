@@ -1,15 +1,16 @@
 import React from 'react';
-import { ReactComponent as ArrowLeftWithUnderscoreIcon } from '../../../assets/svg/arrow-left-and-underscore.svg';
+import SectionHeader from '../../../utils/SectionHeader/SectionHeader';
 import { ReactComponent as CaretIcon } from '../../../assets/svg/caret-up.svg';
 
 const GetInTouch = () => {
     return (
         <section className="row contact" id="contact">
             <div className="values__title col-md-5 svg-absolute">
-                <h2 className="bebas text-center text-md-left mb-3">
-                    <ArrowLeftWithUnderscoreIcon />
-                    Have a project?
-                </h2>
+                <SectionHeader
+                    name="Have a project?"
+                    className="text-md-left mb-3"
+                    isCentered
+                />
                 <h4 className="landing__hero values__hero project__hero">
                     Lets build something amazing together
                 </h4>

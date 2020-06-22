@@ -55,7 +55,12 @@ section {
     margin-right: auto;
 }
 
-.carousel {
+.carous {
+    display: flex;
+    overflow-y: auto;
+}
+
+/* .carousel {
     margin-top: 7rem;
     margin-bottom: 7rem;
 }
@@ -67,28 +72,28 @@ section {
 
 .carousel-button {
     transition: all 400ms linear 200ms
-}
+} */
 
 .carousel-button.previous {
     margin-right: 1rem;
 }
 
-.carousel-button.slick-disabled {
+/* .carousel-button.slick-disabled {
     opacity: 0.5;
-}
+} */
 
 @media screen and (max-width: 767px) {
 
-    .carousel-buttons {
+    /* .carousel-buttons {
         margin-top: 1.5rem;
     }
 
     .carousel-button svg {
         width: 25px;
-    }
+    } */
 }
 
-.slick-slide {
+/* .slick-slide {
     margin-right: 1rem;
 }
 
@@ -98,4 +103,4 @@ section {
 
 .slick-slide:last-child {
     margin-right: 0;
-}
+} */

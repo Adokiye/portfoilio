@@ -102,7 +102,7 @@
 }
 
 .project__link:hover {
-    color: transparent;
+    color: transparent !important;
     text-decoration: none;
     -webkit-text-stroke-color: white;
 }

@@ -1,20 +1,26 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Header/Header';
-import Main from './Main/Main';
+import HomePage from './HomePage/HomePage';
+import Project from './Project/Project'
 import Footer from './Footer/Footer';
 
 const App = () => {
     return (
-        <Router>
-            <Switch>
-                <Route exact path="/">
-                    <Header />
-                    <Main />
-                    <Footer />
-                </Route>
-            </Switch>
-        </Router>
+        <>
+            <Header />
+            <main>
+                <div className="container">
+                    <Router>
+                        <Switch>
+                            <Route exact path="/" component={HomePage}></Route>
+                            <Route exact path="/project/" component={Project}></Route>
+                        </Switch>
+                    </Router>
+                </div>
+            </main>
+            <Footer />
+        </>
     );
 };
 

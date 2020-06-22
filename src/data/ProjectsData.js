@@ -8,7 +8,7 @@ export default [
         className: 'sele',
         title: 'Sele',
         subtitle: 'Talent Accelerator',
-        href: '',
+        path: '/project',
         image: {
             src: SeleImg,
             alt: 'Sele',
@@ -19,7 +19,7 @@ export default [
         className: 'move',
         title: '9Move',
         subtitle: 'Ride Hailing App',
-        href: '',
+        path: '/project',
         image: {
             src: NineMoveImg,
             alt: '9Move',
@@ -30,7 +30,7 @@ export default [
         className: 'kalewo',
         title: 'Kalewo',
         subtitle: 'Live Streaming Service',
-        href: '',
+        path: '/project',
         image: {
             src: KalewoImg,
             alt: 'Kalewo',
