@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionHeader from '../../../utils/SectionHeader/SectionHeader';
-import ProjectsData from '../../../data/ProjectsData';
+import { allData } from '../../../data/ProjectsData';
 import Project from '../../../utils/Project/Project';
 
 const MoreProjects = () => {
@@ -11,14 +11,14 @@ const MoreProjects = () => {
             </div>
 
             <div class="projects">
-                {ProjectsData.map(
-                    ({ id, className, title, subtitle, path, image }) => (
+                {allData.map(
+                    ({ id, className, title, subtitle, href, image }) => (
                         <Project
                             key={id}
                             className={className}
                             title={title}
                             subtitle={subtitle}
-                            path={path}
+                            path={href}
                             src={image.src}
                             alt={image.alt}
                         />

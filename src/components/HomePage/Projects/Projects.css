@@ -25,13 +25,13 @@
     margin-bottom: 0.5rem;
 }
 
-.projects__item a {
+.projects__item span {
     color: #737373;
     font-size: 1rem;
     padding: 1rem;
 }
 
-.projects__item.active a {
+.projects__item.active span {
     color: #9038ff;
 }
 
@@ -71,8 +71,8 @@
     background-size: contain;
 }
 
-.project__item.kalewo {
-    background: linear-gradient(rgba(40, 43, 52, 0.4), rgba(40, 43, 52, 0.4)),
+.project__item.ffo {
+    background: linear-gradient(rgba(239, 56, 63, 0.4), rgba(239, 56, 63, 1)),
         url('../../../assets/img/sofie-brand.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -99,6 +99,7 @@
     color: white;
     -webkit-text-stroke: 1px transparent;
     transition: all 200ms linear;
+    cursor: pointer;
 }
 
 .project__link:hover {
@@ -147,7 +148,7 @@
         margin-bottom: 0;
     }
 
-    .projects__item a {
+    .projects__item span {
         font-size: 1.825rem;
     }
 

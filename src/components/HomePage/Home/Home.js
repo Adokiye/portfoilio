@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import LandingImage from '../../../assets/img/adokiye.png';
+import LandingImage from '../../../assets/img/adokiye.jpg';
 import { ReactComponent as ArrowDownIcon } from '../../../assets/svg/arrow-down.svg';
 
 const Home = () => {
@@ -25,6 +25,13 @@ const Home = () => {
                         requirements. I’m available for remote gigs. Let’s make
                         something special
                     </h3>
+                    <a
+                            href="https://twitter.com/seyidev"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="footer__link"
+                        >
+                    <h3 className="font-weight-light landing__hero">View my CV</h3></a>
                     <Link
                         className="landing__link"
                         to="contact"

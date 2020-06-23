@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Header/Header';
 import HomePage from './HomePage/HomePage';
-import Project from './Project/Project'
+import Project from './Project/Project';
 import Footer from './Footer/Footer';
 
 const App = () => {
@@ -14,7 +14,11 @@ const App = () => {
                     <Router>
                         <Switch>
                             <Route exact path="/" component={HomePage}></Route>
-                            <Route exact path="/project/" component={Project}></Route>
+                            <Route
+                                exact
+                                path="/project/:projectId"
+                                component={Project}
+                            ></Route>
                         </Switch>
                     </Router>
                 </div>

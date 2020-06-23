@@ -1,47 +1,164 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SectionHeader from '../../../utils/SectionHeader/SectionHeader';
 import Project from '../../../utils/Project/Project';
-import ProjectsData from '../../../data/ProjectsData';
+import {
+    laravelData,
+    nodejsData,
+    allData,
+    flutterData,
+    reactNativeData,
+} from '../../../data/ProjectsData';
 import './Projects.css';
 
 const Projects = () => {
+    const [projectType, setProjectType] = useState('all');
+
     return (
         <section className="projects" id="projects">
             <div className="projects__title text-center text-md-left">
                 <SectionHeader name="Projects" />
                 <ul className="projects__list">
-                    <li className="projects__item active">
-                        <a href="#0">ALL</a>
+                    <li
+                        className={
+                            projectType === 'all'
+                                ? 'projects__item active'
+                                : 'projects__item'
+                        }
+                    >
+                        <span href="#0" onClick={() => setProjectType('all')}>
+                            ALL
+                        </span>
                     </li>
-                    <li className="projects__item">
-                        <a href="#0">LARAVEL</a>
+                    <li
+                        className={
+                            projectType === 'reactnative'
+                                ? 'projects__item active'
+                                : 'projects__item'
+                        }
+                    >
+                        <span
+                            href="#0"
+                            onClick={() => setProjectType('reactnative')}
+                        >
+                            REACT NATIVE
+                        </span>
                     </li>
-                    <li className="projects__item">
-                        <a href="#0">NODE JS</a>
+                    <li
+                        className={
+                            projectType === 'flutter'
+                                ? 'projects__item active'
+                                : 'projects__item'
+                        }
+                    >
+                        <span
+                            href="#0"
+                            onClick={() => setProjectType('flutter')}
+                        >
+                            FLUTTER
+                        </span>
                     </li>
-                    <li className="projects__item">
-                        <a href="#0">REACT NATIVE</a>
+                    <li
+                        className={
+                            projectType === 'laravel'
+                                ? 'projects__item active'
+                                : 'projects__item'
+                        }
+                    >
+                        <span
+                            href="#0"
+                            onClick={() => setProjectType('laravel')}
+                        >
+                            LARAVEL
+                        </span>
                     </li>
-                    <li className="projects__item">
-                        <a href="#0">FLUTTER</a>
+                    <li
+                        className={
+                            projectType === 'nodejs'
+                                ? 'projects__item active'
+                                : 'projects__item'
+                        }
+                    >
+                        <span
+                            href="#0"
+                            onClick={() => setProjectType('nodejs')}
+                        >
+                            NODE JS
+                        </span>
                     </li>
                 </ul>
             </div>
 
             <div className="project__list">
-                {ProjectsData.map(
-                    ({ id, className, title, subtitle, path, image }) => (
-                        <Project
-                            key={id}
-                            className={className}
-                            title={title}
-                            subtitle={subtitle}
-                            path={path}
-                            src={image.src}
-                            alt={image.alt}
-                        />
-                    )
-                )}
+                {projectType === 'all' &&
+                    allData.map(
+                        ({ id, className, title, subtitle, image, href }) => (
+                            <Project
+                                key={id}
+                                className={className}
+                                title={title}
+                                subtitle={subtitle}
+                                src={image.src}
+                                alt={image.alt}
+                                path={href}
+                            />
+                        )
+                    )}
+                {projectType === 'flutter' &&
+                    flutterData.map(
+                        ({ id, className, title, subtitle, image, href }) => (
+                            <Project
+                                key={id}
+                                className={className}
+                                title={title}
+                                subtitle={subtitle}
+                                src={image.src}
+                                alt={image.alt}
+                                path={href}
+                            />
+                        )
+                    )}
+                {projectType === 'reactnative' &&
+                    reactNativeData.map(
+                        ({ id, className, title, subtitle, image, href }) => (
+                            <Project
+                                key={id}
+                                className={className}
+                                title={title}
+                                subtitle={subtitle}
+                                path={href}
+                                src={image.src}
+                                alt={image.alt}
+                            />
+                        )
+                    )}
+                {projectType === 'laravel' &&
+                    laravelData.map(
+                        ({ id, className, title, subtitle, image, href }) => (
+                            <Project
+                                key={id}
+                                className={className}
+                                title={title}
+                                subtitle={subtitle}
+                                src={image.src}
+                                alt={image.alt}
+                                path={href}
+                            />
+                        )
+                    )}
+                {projectType === 'nodejs' &&
+                    nodejsData.map(
+                        ({ id, className, title, subtitle, image, href }) => (
+                            <Project
+                                key={id}
+                                className={className}
+                                title={title}
+                                subtitle={subtitle}
+                                src={image.src}
+                                alt={image.alt}
+                                path={href}
+                            />
+                        )
+                    )}
             </div>
         </section>
     );

@@ -23,4 +23,16 @@ export default [
         id: 5,
         src: Carousel2,
     },
+    {
+        id: 6,
+        src: Carousel3,
+    },
+    {
+        id: 7,
+        src: Carousel1,
+    },
+    {
+        id: 8,
+        src: Carousel2,
+    },
 ];

@@ -1,14 +1,14 @@
 import SeleImg from '../assets/img/sele.png';
-import NineMoveImg from '../assets/img/nine-move.png';
-import KalewoImg from '../assets/img/kalewo.png';
+import OtrekImg from '../assets/img/otrek.png';
+import FfoImg from '../assets/img/ffo.png';
 
-export default [
+export const allData = [
     {
         id: 1,
         className: 'sele',
         title: 'Sele',
         subtitle: 'Talent Accelerator',
-        path: '/project',
+        href: 'http://sele-demo.herokuapp.com/',
         image: {
             src: SeleImg,
             alt: 'Sele',
@@ -17,23 +17,93 @@ export default [
     {
         id: 2,
         className: 'move',
-        title: '9Move',
-        subtitle: 'Ride Hailing App',
-        path: '/project',
+        title: 'Otrek',
+        subtitle: 'Trek Companion App',
+        href:
+            'https://play.google.com/store/apps/details?id=com.comptware.otrek.android',
         image: {
-            src: NineMoveImg,
-            alt: '9Move',
+            src: OtrekImg,
+            alt: 'Otrek',
         },
     },
     {
         id: 3,
-        className: 'kalewo',
-        title: 'Kalewo',
-        subtitle: 'Live Streaming Service',
-        path: '/project',
+        className: 'ffo',
+        title: `For food   \n  Only`,
+        subtitle: 'Cooking food made easy',
+        href: 'https://play.google.com/store/apps/details?id=com.comptware.ffo',
         image: {
-            src: KalewoImg,
-            alt: 'Kalewo',
+            src: FfoImg,
+            alt: 'FFO',
+        },
+    },
+];
+
+export const laravelData = [
+    {
+        id: 1,
+        className: 'sele',
+        title: 'Sele',
+        subtitle: 'Talent Accelerator',
+        href: 'http://sele-demo.herokuapp.com/',
+        image: {
+            src: SeleImg,
+            alt: 'Sele',
+        },
+    },
+];
+
+export const nodejsData = [
+    {
+        id: 1,
+        className: 'move',
+        title: 'Otrek',
+        subtitle: 'Trek Companion App',
+        href:
+            'https://play.google.com/store/apps/details?id=com.comptware.otrek.android',
+        image: {
+            src: OtrekImg,
+            alt: 'Otrek',
+        },
+    },
+];
+
+export const reactNativeData = [
+    {
+        id: 1,
+        className: 'move',
+        title: 'Otrek',
+        subtitle: 'Trek Companion App',
+        href:
+            'https://play.google.com/store/apps/details?id=com.comptware.otrek.android',
+        image: {
+            src: OtrekImg,
+            alt: 'Otrek',
+        },
+    },
+    {
+        id: 2,
+        className: 'sele',
+        title: 'Sele',
+        subtitle: 'Talent Accelerator',
+        href: 'http://sele-demo.herokuapp.com/',
+        image: {
+            src: SeleImg,
+            alt: 'Sele',
+        },
+    },
+];
+
+export const flutterData = [
+    {
+        id: 1,
+        className: 'ffo',
+        title: 'For food Only',
+        subtitle: 'Cooking food made easy',
+        href: 'https://play.google.com/store/apps/details?id=com.comptware.ffo',
+        image: {
+            src: FfoImg,
+            alt: 'FFO',
         },
     },
 ];
