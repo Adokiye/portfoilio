@@ -632,6 +632,55 @@ const MyHomePage = (props) => {
             </div>
         </section>
 
+        <section id="experience" className="projects">
+            <div className="projects__title text-center text-md-left">
+                <h2 className="bebas">Experience</h2>
+            </div>
+            <div className="project__item row kalewo" style={{ padding: "2rem" }}>
+                <div className="col-12">
+                    <h2 className="project__title">Staff DevOps Engineer - Comptware Inc</h2>
+                    <h4 className="project__subtitle">Jan 2017 - Present</h4>
+                    <h4 className="project__subtitle">Owned platform reliability, release safety, and operational excellence across distributed Kubernetes systems.</h4>
+                    <p>
+                        Led infrastructure strategy and hands-on execution for Kubernetes on AWS EKS with Docker, ECR, RDS,
+                        and S3, while enforcing GitOps delivery patterns with Git/GitHub, Helm, and ArgoCD. Served as
+                        technical owner for Temporal platform reliability, including namespaces, workflows, schema jobs,
+                        frontend/history pods, Admin Tools, and tctl/Temporal CLI operations. Defined backup and disaster
+                        recovery standards with Postgres, PgBouncer, pg_dump, pg_restore, psql, RDS migration plans, and
+                        S3 backup streaming jobs. Built SRE-grade observability and autoscaling foundations using Prometheus,
+                        Grafana, Loki, Elasticsearch, HPA, KEDA, and high-signal PromQL dashboards.
+                    </p>
+                </div>
+            </div>
+            <div className="project__item row nine-move" style={{ padding: "2rem" }}>
+                <div className="col-12">
+                    <h2 className="project__title">Senior DevOps Engineer - Vyudu Inc</h2>
+                    <h4 className="project__subtitle">Jan 2020 - Jan 2021</h4>
+                    <h4 className="project__subtitle">Drove production uptime and incident response through disciplined Kubernetes and workload operations.</h4>
+                    <p>
+                        Operated and optimized production clusters with kubectl across Pods, Jobs, Deployments,
+                        StatefulSets, rollouts, and right-sized resource requests/limits to improve stability and cost
+                        efficiency. Led operational debugging for CrashLoopBackOff patterns, proactive autoscaling checks,
+                        and resilience improvements across core services. Supported queue and workflow critical paths using
+                        Kafka, Zeit services, Zigflow, DSL workflows, task queues, and workflow/activity monitoring.
+                    </p>
+                </div>
+            </div>
+            <div className="project__item row sele" style={{ padding: "2rem" }}>
+                <div className="col-12">
+                    <h2 className="project__title">Senior Full Stack Engineer & DevOps Engineer - Mkobobank</h2>
+                    <h4 className="project__subtitle">Nov 2020 - Dec 2021</h4>
+                    <h4 className="project__subtitle">Provided senior end-to-end ownership from application delivery to production platform performance.</h4>
+                    <p>
+                        Combined product engineering leadership with DevOps execution to ship features safely while
+                        strengthening cloud infrastructure, CI/CD maturity, GitOps workflows, and runtime observability.
+                        Partnered with cross-functional teams to improve deployment reliability, release velocity, and
+                        operational readiness for customer-facing banking workloads.
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <section className="row contact" id="contact">
             <div className="values__title col-md-5 svg-absolute">
                 <h2 className="bebas text-center text-md-left mb-3">
